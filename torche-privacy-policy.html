@@ -4,224 +4,572 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | Torche</title>
+  <meta name="description" content="Privacy Policy for the Torche Android application.">
   <style>
     :root {
-      --bg: #0b1220;
-      --panel: #111a2a;
-      --text: #e6edf7;
-      --muted: #a7b4c8;
-      --accent: #5db3ff;
-      --border: #23314a;
+      color-scheme: light;
+      --page: #f6f8fb;
+      --surface: #ffffff;
+      --surface-soft: #f9fbfd;
+      --ink: #101828;
+      --muted: #667085;
+      --subtle: #98a2b3;
+      --line: #d0d5dd;
+      --line-soft: #e4e7ec;
+      --brand: #c2410c;
+      --brand-strong: #9a3412;
+      --brand-soft: #ffedd5;
+      --shadow: 0 20px 50px rgba(16, 24, 40, 0.08);
+      --radius: 8px;
+      --content: 1180px;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      background: linear-gradient(180deg, #0b1220 0%, #0e1626 100%);
-      color: var(--text);
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255, 237, 213, 0.82), transparent 34rem),
+        linear-gradient(180deg, #ffffff 0%, var(--page) 24rem);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       line-height: 1.65;
+      text-rendering: optimizeLegibility;
     }
-    .container {
-      max-width: 980px;
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      z-index: 10;
+      transform: translateY(-150%);
+      border-radius: var(--radius);
+      background: var(--ink);
+      color: #ffffff;
+      padding: 10px 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    a {
+      color: var(--brand-strong);
+      font-weight: 700;
+      text-decoration: none;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .page-header,
+    .policy-shell,
+    .page-footer {
+      width: min(var(--content), calc(100% - 40px));
       margin: 0 auto;
-      padding: 36px 18px 56px;
     }
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 18px;
+
+    .page-header {
+      padding: 28px 0 24px;
     }
-    h1, h2, h3 {
-      margin: 0 0 10px;
-      line-height: 1.3;
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
     }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.2rem; margin-top: 4px; }
-    p, li { color: var(--text); }
-    .muted { color: var(--muted); }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 20px; margin: 8px 0; }
-    .meta {
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+    }
+
+    .brand-icon {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 6px;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: var(--radius);
+      background: var(--brand);
+      color: #ffffff;
+      font-weight: 900;
+      letter-spacing: 0;
     }
+
+    .hero {
+      margin-top: 28px;
+      padding: clamp(28px, 5vw, 56px);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 30px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(194, 65, 12, 0.22);
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand-strong);
+      padding: 5px 12px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    h1 {
+      max-width: 840px;
+      font-size: clamp(2.25rem, 7vw, 4.75rem);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+    }
+
+    h3 {
+      margin-top: 24px;
+      font-size: 1.02rem;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 820px;
+      margin-top: 18px;
+      color: #475467;
+      font-size: clamp(1.02rem, 2vw, 1.22rem);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 750;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .meta-card {
+      min-width: 0;
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      background: var(--surface-soft);
+      padding: 16px;
+    }
+
+    .meta-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .meta-card strong {
+      display: block;
+      margin-top: 5px;
+      overflow-wrap: anywhere;
+    }
+
+    .policy-shell {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 48px;
+      align-items: start;
+      padding: 20px 0 64px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 24px;
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.9);
+      padding: 18px;
+      box-shadow: 0 12px 28px rgba(16, 24, 40, 0.06);
+    }
+
+    .toc h2 {
+      margin-bottom: 12px;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
     .toc a {
       display: block;
-      padding: 4px 0;
+      border-radius: 6px;
+      color: #344054;
+      padding: 8px 10px;
+      font-size: 0.94rem;
+      font-weight: 650;
     }
-    .small { font-size: 0.92rem; color: var(--muted); }
+
+    .toc a:hover,
+    .toc a:focus {
+      background: var(--surface-soft);
+      color: var(--brand-strong);
+      text-decoration: none;
+    }
+
+    .content {
+      min-width: 0;
+      border-top: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .policy-section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 24px;
+    }
+
+    .policy-section:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .policy-section > p,
+    .policy-section > ul {
+      margin-top: 14px;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 8px 0;
+      padding-left: 2px;
+    }
+
+    .page-footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 40px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 1080px) {
+      .meta-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 980px) {
+      .policy-shell {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .toc {
+        position: static;
+      }
+
+      .toc nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2px 8px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page-header,
+      .policy-shell,
+      .page-footer {
+        width: min(100% - 24px, var(--content));
+      }
+
+      .brand-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        margin-top: 20px;
+        padding: 24px;
+      }
+
+      .meta-grid,
+      .toc nav {
+        grid-template-columns: 1fr;
+      }
+
+      .policy-section {
+        padding: 28px 0;
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="container">
-    <section class="card">
-      <h1>Privacy Policy</h1>
-      <p class="muted">Effective date: June 1, 2026</p>
-      <div class="meta">
-        <p><strong>App:</strong> Torche</p>
-        <p><strong>Publisher:</strong> Sklabs, Naseer Technologies</p>
-        <p><strong>Developer type:</strong> Individual developer</p>
-        <p><strong>Region:</strong> Asia, India</p>
-        <p><strong>Contact email:</strong> <a href="mailto:honey3504581@gmail.com">honey3504581@gmail.com</a></p>
+  <a class="skip-link" href="#policy-content">Skip to policy content</a>
+
+  <header class="page-header">
+    <div class="brand-row">
+      <div class="brand-mark" aria-label="Torche">
+        <span class="brand-icon" aria-hidden="true">T</span>
+        <span>Torche</span>
+      </div>
+      <span>Privacy Center</span>
+    </div>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1 id="page-title">Torche Privacy Policy</h1>
+      <p class="lead">
+        This policy explains how the Torche Android application, also shown in
+        the app interface as Torch Studio, handles device permissions,
+        subscription state, third-party billing services, and user privacy choices.
+      </p>
+
+      <div class="meta-grid" aria-label="Policy information">
+        <div class="meta-card">
+          <span>Effective date</span>
+          <strong>June 1, 2026</strong>
+        </div>
+        <div class="meta-card">
+          <span>App</span>
+          <strong>Torche / Torch Studio</strong>
+        </div>
+        <div class="meta-card">
+          <span>Publisher</span>
+          <strong>Sklabs, Naseer Technologies</strong>
+        </div>
+        <div class="meta-card">
+          <span>Developer type</span>
+          <strong>Individual developer</strong>
+        </div>
+        <div class="meta-card">
+          <span>Region</span>
+          <strong>Asia, India</strong>
+        </div>
+        <div class="meta-card">
+          <span>Brand reference</span>
+          <strong>Naseer Labs</strong>
+        </div>
+        <div class="meta-card">
+          <span>Contact email</span>
+          <strong><a href="mailto:honey3504581@gmail.com">honey3504581@gmail.com</a></strong>
+        </div>
       </div>
     </section>
+  </header>
 
-    <section class="card toc" aria-label="Table of Contents">
+  <main class="policy-shell">
+    <aside class="toc" aria-label="Table of contents">
       <h2>Contents</h2>
-      <a href="#scope">1. Scope</a>
-      <a href="#what-we-collect">2. Information We Collect</a>
-      <a href="#permissions">3. Device Permissions</a>
-      <a href="#payments">4. Subscriptions and Payments</a>
-      <a href="#use">5. How We Use Information</a>
-      <a href="#sharing">6. Sharing and Third Parties</a>
-      <a href="#retention">7. Data Retention</a>
-      <a href="#security">8. Data Security</a>
-      <a href="#children">9. Children's Privacy</a>
-      <a href="#rights">10. International Privacy Rights</a>
-      <a href="#transfers">11. International Data Transfers</a>
-      <a href="#changes">12. Changes to This Policy</a>
-      <a href="#contact">13. Contact</a>
-    </section>
+      <nav>
+        <a href="#scope">1. Scope</a>
+        <a href="#what-we-collect">2. Information We Collect</a>
+        <a href="#permissions">3. Device Permissions</a>
+        <a href="#payments">4. Subscriptions and Payments</a>
+        <a href="#use">5. How We Use Information</a>
+        <a href="#sharing">6. Sharing and Third Parties</a>
+        <a href="#retention">7. Data Retention</a>
+        <a href="#security">8. Data Security</a>
+        <a href="#children">9. Children's Privacy</a>
+        <a href="#rights">10. International Privacy Rights</a>
+        <a href="#transfers">11. International Data Transfers</a>
+        <a href="#changes">12. Changes to This Policy</a>
+        <a href="#contact">13. Contact</a>
+      </nav>
+    </aside>
 
-    <section id="scope" class="card">
-      <h2>1. Scope</h2>
-      <p>
-        This Privacy Policy applies to the Torche mobile application on Android and its in-app subscription features.
-        It does not apply to third-party services you use outside the app, including Google Play.
-      </p>
-    </section>
+    <div id="policy-content" class="content">
+      <section id="scope" class="policy-section">
+        <h2>1. Scope</h2>
+        <p>
+          This Privacy Policy applies to the Torche mobile application on
+          Android, including screens branded in the app as Torch Studio, and its
+          in-app subscription features.
+          It does not apply to third-party services you use outside the app, including Google Play.
+        </p>
+      </section>
 
-    <section id="what-we-collect" class="card">
-      <h2>2. Information We Collect</h2>
-      <p>
-        Torche is designed for minimal data usage. We do not require account registration and we do not collect
-        personal profile data such as your name, phone number, or home address.
-      </p>
-      <h3>Information accessed by the app</h3>
-      <ul>
-        <li><strong>Camera/flashlight access:</strong> Used only to control torch functionality.</li>
-        <li><strong>Subscription state data:</strong> Product ID, offer token, purchase status, and purchase metadata returned by Google Play Billing.</li>
-      </ul>
-      <p class="small">
-        Based on current app implementation, Torche does not operate its own backend server for user accounts or user profiling.
-      </p>
-    </section>
+      <section id="what-we-collect" class="policy-section">
+        <h2>2. Information We Collect</h2>
+        <p>
+          Torche is designed for minimal data usage. We do not require account registration and we do not collect
+          personal profile data such as your name, phone number, or home address.
+        </p>
+        <h3>Information accessed by the app</h3>
+        <ul>
+          <li><strong>Camera/flashlight access:</strong> Used only to control torch functionality.</li>
+          <li><strong>Subscription state data:</strong> Product ID, offer token, purchase status, purchase token, purchase time, active subscription status, auto-renew status, and purchase metadata returned by Google Play Billing.</li>
+        </ul>
+        <p class="small">
+          Based on current app implementation, Torche does not operate its own backend server for user accounts or user profiling.
+        </p>
+      </section>
 
-    <section id="permissions" class="card">
-      <h2>3. Device Permissions</h2>
-      <ul>
-        <li><strong>CAMERA:</strong> Required to control flashlight/torch hardware.</li>
-        <li><strong>FLASHLIGHT:</strong> Required to switch flashlight on/off.</li>
-        <li><strong>INTERNET:</strong> Required for Google Play Billing interactions and related Play services behavior.</li>
-      </ul>
-      <p>
-        Torche does not use camera permission to capture photos or videos and does not record audio.
-      </p>
-    </section>
+      <section id="permissions" class="policy-section">
+        <h2>3. Device Permissions</h2>
+        <ul>
+          <li><strong>CAMERA:</strong> Required to control flashlight/torch hardware.</li>
+          <li><strong>FLASHLIGHT:</strong> Required to switch flashlight on/off.</li>
+          <li><strong>INTERNET:</strong> Required for Google Play Billing interactions and related Play services behavior.</li>
+        </ul>
+        <p>
+          Torche does not use camera permission to capture photos or videos and does not record audio.
+        </p>
+      </section>
 
-    <section id="payments" class="card">
-      <h2>4. Subscriptions and Payments</h2>
-      <p>
-        Torche offers subscription-based premium features through Google Play Billing.
-        Payments are processed by Google Play, not by Sklabs or Naseer Technologies directly.
-      </p>
-      <ul>
-        <li>We do not directly collect or store your card, UPI, or bank payment credentials.</li>
-        <li>Purchase and subscription details are provided to the app by Google Play to unlock/manage features.</li>
-        <li>Subscription management may open Google Play subscription pages in your browser/Play app.</li>
-      </ul>
-      <p>
-        For payment privacy details, review Google's policies:
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
-      </p>
-    </section>
+      <section id="payments" class="policy-section">
+        <h2>4. Subscriptions and Payments</h2>
+        <p>
+          Torche offers subscription-based premium features through Google Play Billing.
+          Payments are processed by Google Play, not by Sklabs or Naseer Technologies directly.
+        </p>
+        <ul>
+          <li>We do not directly collect or store your card, UPI, or bank payment credentials.</li>
+          <li>Google Play Billing may provide product IDs, offer tokens, purchase tokens, purchase times, purchase status, active subscription status, auto-renew status, and purchase history to the app.</li>
+          <li>Purchase and subscription details are used to unlock premium features, restore access, acknowledge purchases, show available offers, and help users manage subscriptions.</li>
+          <li>Subscription management may open Google Play subscription pages in your browser/Play app.</li>
+        </ul>
+        <p>
+          For payment privacy details, review Google's policies:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+        </p>
+      </section>
 
-    <section id="use" class="card">
-      <h2>5. How We Use Information</h2>
-      <ul>
-        <li>Provide torch and screen/color light features.</li>
-        <li>Verify and maintain subscription access to premium features.</li>
-        <li>Support app reliability and troubleshoot billing/feature issues.</li>
-      </ul>
-    </section>
+      <section id="use" class="policy-section">
+        <h2>5. How We Use Information</h2>
+        <ul>
+          <li>Provide torch and screen/color light features.</li>
+          <li>Verify and maintain subscription access to premium features.</li>
+          <li>Restore existing subscription access after reinstall, app restart, or app update.</li>
+          <li>Support app reliability and troubleshoot billing/feature issues.</li>
+        </ul>
+      </section>
 
-    <section id="sharing" class="card">
-      <h2>6. Sharing and Third Parties</h2>
-      <p>
-        We do not sell your personal data. Torche relies on Google Play Billing infrastructure for subscription transactions.
-        Any personal data processed by Google Play is governed by Google policies and terms.
-      </p>
-    </section>
+      <section id="sharing" class="policy-section">
+        <h2>6. Sharing and Third Parties</h2>
+        <p>
+          We do not sell your personal data. Torche relies on Google Play Billing infrastructure for subscription transactions.
+          Any personal data processed by Google Play is governed by Google policies and terms.
+        </p>
+      </section>
 
-    <section id="retention" class="card">
-      <h2>7. Data Retention</h2>
-      <p>
-        App-level billing state may be cached on-device for feature access continuity.
-        We do not maintain independent user account databases for Torche in current architecture.
-      </p>
-    </section>
+      <section id="retention" class="policy-section">
+        <h2>7. Data Retention</h2>
+        <p>
+          App-level billing state may be cached on-device for feature access continuity.
+          Google Play purchase and subscription history remains available through
+          Google Play according to Google's retention practices and your Google
+          account settings. We do not maintain independent user account databases
+          for Torche in current architecture.
+        </p>
+      </section>
 
-    <section id="security" class="card">
-      <h2>8. Data Security</h2>
-      <p>
-        We apply reasonable technical and organizational measures to reduce misuse risks.
-        No method of transmission or storage is 100% secure, but Torche is designed with data minimization.
-      </p>
-    </section>
+      <section id="security" class="policy-section">
+        <h2>8. Data Security</h2>
+        <p>
+          We apply reasonable technical and organizational measures to reduce misuse risks.
+          No method of transmission or storage is 100% secure, but Torche is designed with data minimization.
+        </p>
+      </section>
 
-    <section id="children" class="card">
-      <h2>9. Children's Privacy</h2>
-      <p>
-        Torche is not directed to children under 13. We do not knowingly collect personal data from children under 13.
-        If you believe a child provided data to us, contact us and we will review the request.
-      </p>
-    </section>
+      <section id="children" class="policy-section">
+        <h2>9. Children's Privacy</h2>
+        <p>
+          Torche is not directed to children under 13. We do not knowingly collect personal data from children under 13.
+          If you believe a child provided data to us, contact us and we will review the request.
+        </p>
+      </section>
 
-    <section id="rights" class="card">
-      <h2>10. International Privacy Rights</h2>
-      <p>
-        Depending on your location (for example EEA/UK/Switzerland, California, or other regions), you may have rights
-        to request access, correction, deletion, or restriction of personal data. Since Torche does not maintain
-        user profile databases in current design, rights requests may be limited to data processed by third parties
-        such as Google Play.
-      </p>
-    </section>
+      <section id="rights" class="policy-section">
+        <h2>10. International Privacy Rights</h2>
+        <p>
+          Depending on your location (for example EEA/UK/Switzerland, California, or other regions), you may have rights
+          to request access, correction, deletion, or restriction of personal data. Since Torche does not maintain
+          user profile databases in current design, rights requests may be limited to data processed by third parties
+          such as Google Play.
+        </p>
+      </section>
 
-    <section id="transfers" class="card">
-      <h2>11. International Data Transfers</h2>
-      <p>
-        Torche is operated from Asia (India). Where third-party processors are used (such as Google Play),
-        data may be processed in other countries under those providers' legal terms.
-      </p>
-    </section>
+      <section id="transfers" class="policy-section">
+        <h2>11. International Data Transfers</h2>
+        <p>
+          Torche is operated from Asia (India). Where third-party processors are used (such as Google Play),
+          data may be processed in other countries under those providers' legal terms.
+        </p>
+      </section>
 
-    <section id="changes" class="card">
-      <h2>12. Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy to reflect product, legal, or operational changes.
-        Updated versions will be posted with a revised effective date.
-      </p>
-    </section>
+      <section id="changes" class="policy-section">
+        <h2>12. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy to reflect product, legal, or operational changes.
+          Updated versions will be posted with a revised effective date.
+        </p>
+      </section>
 
-    <section id="contact" class="card">
-      <h2>13. Contact</h2>
-      <p>
-        For privacy questions or requests related to Torche, contact:
-      </p>
-      <p>
+      <section id="contact" class="policy-section">
+        <h2>13. Contact</h2>
+        <p>
+          For privacy questions or requests related to Torche, contact:
+        </p>
+        <p>
         <strong>Sklabs, Naseer Technologies</strong><br>
         Individual Developer<br>
+        App / brand: Torche, Torch Studio, Naseer Labs<br>
         Region: Asia, India<br>
         Email: <a href="mailto:honey3504581@gmail.com">honey3504581@gmail.com</a>
       </p>
-      <p class="small">
-        This policy is provided for transparency and information. It is not legal advice.
-      </p>
-    </section>
+        <p class="small">
+          This policy is provided for transparency and information. It is not legal advice.
+        </p>
+      </section>
+    </div>
   </main>
+
+  <footer class="page-footer">
+    Copyright 2026 Sklabs, Naseer Technologies. All rights reserved.
+  </footer>
 </body>
 </html>
