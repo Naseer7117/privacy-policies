@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - DriveCam</title>
+  <meta name="description" content="Privacy Policy for the DriveCam mobile application.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef9f8;
+      --panel: #ffffff;
+      --ink: #172033;
+      --muted: #5f6d80;
+      --line: #d7e5ed;
+      --teal: #007c89;
+      --mint: #d8f5ea;
+      --coral: #ff5c7a;
+      --soft: #f7fbff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+
+    .hero,
+    section {
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(23, 32, 51, 0.08);
+    }
+
+    .hero {
+      padding: 34px;
+      margin-bottom: 18px;
+    }
+
+    section {
+      padding: 26px;
+      margin-top: 18px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      padding-top: 4px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin-top: 18px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    strong {
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: var(--mint);
+      color: var(--ink);
+      font-size: 0.92rem;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    td {
+      color: var(--muted);
+      background: var(--panel);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 32px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--mint);
+      color: #157258;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .notice {
+      border-left: 4px solid var(--coral);
+      background: #fff3f6;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-top: 18px;
+    }
+
+    .notice p {
+      margin: 0;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .meta div {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .meta span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .meta strong {
+      display: block;
+      overflow-wrap: anywhere;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 28px;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 20px, 980px);
+        padding-top: 20px;
+      }
+
+      .hero,
+      section {
+        padding: 20px;
+        border-radius: 16px;
+      }
+
+      .meta {
+        grid-template-columns: 1fr;
+      }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        border-bottom: 1px solid var(--line);
+      }
+
+      tr:last-child {
+        border-bottom: 0;
+      }
+
+      td {
+        border-bottom: 0;
+        padding: 10px 12px;
+      }
+
+      td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--ink);
+        font-weight: 800;
+        margin-bottom: 3px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="hero">
+      <div class="badge">Privacy Policy</div>
+      <h1>DriveCam Privacy Policy</h1>
+      <p>
+        This Privacy Policy explains how DriveCam, package name
+        <strong>com.sklabs.drivecam</strong>, accesses, collects, uses, stores,
+        shares, and deletes information when you use the DriveCam mobile
+        application.
+      </p>
+      <div class="meta" aria-label="Policy information">
+        <div>
+          <span>Effective date</span>
+          <strong>June 1, 2026</strong>
+        </div>
+        <div>
+          <span>Developer / publisher</span>
+          <strong>Sklabs, Naseer Technologies</strong>
+        </div>
+        <div>
+          <span>Privacy contact</span>
+          <strong><a href="mailto:honey3504581@gmail.com">honey3504581@gmail.com</a></strong>
+        </div>
+        <div>
+          <span>Business location</span>
+          <strong>Asia, India</strong>
+        </div>
+      </div>
+      <div class="notice">
+        <p>
+          <strong>Before publishing:</strong> replace all bracketed placeholders
+          with your real developer name, privacy email, and region if these
+          details change. The developer name shown here should match the
+          developer name used in your Google Play store listing.
+        </p>
+      </div>
+    </article>
+
+    <section>
+      <h2>1. Summary</h2>
+      <p>
+        DriveCam is a camera recording utility that lets users record videos,
+        capture photos, save media locally on the device or selected storage
+        folders, and optionally upload media to the user's own Google Drive.
+        DriveCam is designed to keep user recordings under the user's control.
+      </p>
+      <p>
+        DriveCam does not sell personal information. DriveCam does not use
+        personal information for third-party advertising. DriveCam only accesses
+        Google account and Google Drive data to provide sign-in, Drive storage
+        status, upload, playback, folder management, and deletion features
+        requested by the user.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Information We Access or Collect</h2>
+      <p>
+        The information DriveCam accesses or collects depends on the permissions
+        you grant and the features you use.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Category">Camera data</td>
+            <td data-label="Examples">Live camera preview, captured videos, captured photos.</td>
+            <td data-label="Purpose">To record videos, capture photos, switch cameras, zoom, and use camera controls.</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Audio data</td>
+            <td data-label="Examples">Microphone audio included in recorded videos.</td>
+            <td data-label="Purpose">To record video clips with sound when video recording is used.</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Files and media</td>
+            <td data-label="Examples">Videos, photos, temporary recording files, upload history, playback cache.</td>
+            <td data-label="Purpose">To save recordings, upload files, show history, play Drive videos, and manage local storage.</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Google account information</td>
+            <td data-label="Examples">Name, email address, profile photo, Google account identifier.</td>
+            <td data-label="Purpose">To show signed-in account details and connect the app to the user's Google Drive.</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Google Drive information</td>
+            <td data-label="Examples">Drive storage quota, DriveCam folders, uploaded media files, file names, file metadata.</td>
+            <td data-label="Purpose">To upload recordings, display Drive storage usage, list DriveCam folders, play recordings, and manage scheduled deletion.</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Location data</td>
+            <td data-label="Examples">Approximate or precise device location if location permission is granted and a location feature is used.</td>
+            <td data-label="Purpose">To save location details with media file information when enabled and permitted by the user.</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Device and app information</td>
+            <td data-label="Examples">Available device storage, camera capabilities, selected resolution/FPS, upload frequency, app settings.</td>
+            <td data-label="Purpose">To operate recording features, prevent low-storage failures, show supported camera options, and remember preferences.</td>
+          </tr>
+          <tr>
+            <td data-label="Category">Network test information</td>
+            <td data-label="Examples">Latency, download speed, upload speed, upload progress, transfer speed.</td>
+            <td data-label="Purpose">To show connection quality and upload progress inside the app.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. Permissions Used by DriveCam</h2>
+      <ul>
+        <li><strong>Camera:</strong> required to show preview, record video, capture photos, switch front/back cameras, and zoom.</li>
+        <li><strong>Microphone:</strong> required to record audio with videos.</li>
+        <li><strong>Location:</strong> used only when location-related media details are enabled and permission is granted.</li>
+        <li><strong>Notifications:</strong> used to show recording, upload, incomplete upload, and background task status where supported.</li>
+        <li><strong>Storage / media / folder access:</strong> used to save recordings locally, save to a selected folder, create DriveCam folders, and manage temporary files.</li>
+        <li><strong>Network access:</strong> used for Google sign-in, Google Drive upload/playback, Drive storage status, and network speed tests.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. How We Use Information</h2>
+      <p>DriveCam uses information only to provide and improve user-facing app features, including:</p>
+      <ul>
+        <li>recording videos and capturing photos;</li>
+        <li>saving files to local storage or a user-selected storage folder;</li>
+        <li>uploading videos and photos to the user's Google Drive when Drive is selected;</li>
+        <li>creating and organizing DriveCam folders by media type and date;</li>
+        <li>showing upload progress, upload speed, recording duration, and upload history;</li>
+        <li>resuming or retrying interrupted uploads where possible;</li>
+        <li>displaying Drive storage usage, device storage usage, and low-storage warnings;</li>
+        <li>listing DriveCam date folders and playing recorded videos from the app;</li>
+        <li>applying user-selected deletion schedules for DriveCam folders; and</li>
+        <li>performing connection latency and speed tests.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Google Sign-In and Google Drive</h2>
+      <p>
+        DriveCam uses Google Sign-In and Google Drive APIs so that users can
+        upload recordings to their own Google Drive and manage files created by
+        DriveCam. When you sign in, DriveCam may access your Google profile
+        information, such as name, email address, and profile photo, to display
+        the active account in the app.
+      </p>
+      <p>
+        DriveCam uses Google Drive access to create and manage DriveCam folders,
+        upload files selected or created by the app, display Drive storage
+        quota, list DriveCam media folders, stream videos for playback, and
+        delete DriveCam folders or files when the user configures deletion
+        features.
+      </p>
+      <p>
+        DriveCam's use of information received from Google APIs will adhere to
+        the Google API Services User Data Policy, including the Limited Use
+        requirements. DriveCam does not use Google user data for advertising,
+        does not sell Google user data, and does not allow humans to read Google
+        user data except where necessary for security, legal compliance, or with
+        the user's explicit consent.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Local Storage and User-Selected Folders</h2>
+      <p>
+        If you choose internal or local storage, DriveCam saves recordings on
+        the device or in a storage folder selected by you. DriveCam may create
+        folders such as:
+      </p>
+      <ul>
+        <li><strong>DriveCam/Videos/yyyy-MM-dd</strong></li>
+        <li><strong>DriveCam/Photos/yyyy-MM-dd</strong></li>
+      </ul>
+      <p>
+        Temporary local files may be created while recording, uploading,
+        retrying uploads, or playing videos. DriveCam attempts to delete
+        temporary files after they are no longer needed, such as after a
+        successful upload or cache cleanup.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Sharing and Third Parties</h2>
+      <p>
+        DriveCam does not sell personal information. DriveCam does not share
+        personal information with third-party advertisers.
+      </p>
+      <p>Information may be processed or shared in the following limited cases:</p>
+      <ul>
+        <li><strong>Google services:</strong> Google Sign-In and Google Drive are used when you choose Drive features.</li>
+        <li><strong>Device operating system:</strong> Android permission and storage systems process permission prompts, file access, notifications, and media handling.</li>
+        <li><strong>Legal and safety reasons:</strong> information may be disclosed if required by law, legal process, or to protect rights, safety, and security.</li>
+        <li><strong>Business transfer:</strong> if the app or developer business is transferred, information may be transferred as part of that transaction, subject to applicable law.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Data Retention and Deletion</h2>
+      <ul>
+        <li><strong>Local recordings:</strong> remain on your device or selected storage folder until you delete them or app features delete temporary files.</li>
+        <li><strong>Drive recordings:</strong> remain in your Google Drive until you delete them, revoke app access, or use DriveCam deletion scheduling features.</li>
+        <li><strong>Upload history:</strong> may be stored locally in the app and can be cleared from the app where the feature is available.</li>
+        <li><strong>Deletion schedules and history:</strong> may be stored in DriveCam-managed files or folders so DriveCam can track scheduled cleanup of DriveCam folders.</li>
+        <li><strong>Playback cache:</strong> video playback cache may be deleted automatically after inactivity or during cache cleanup.</li>
+        <li><strong>Account information:</strong> remains available while you are signed in. You can sign out in the app to disconnect the current Google account from DriveCam.</li>
+      </ul>
+      <p>
+        You can also manage or delete files directly in your Google Drive or
+        device storage. If you uninstall DriveCam, files already saved outside
+        the app's private storage, including files in Google Drive or selected
+        folders, may remain until you delete them.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Security</h2>
+      <p>
+        DriveCam uses platform permission controls and Google authentication
+        mechanisms to protect access to user data. Data sent to Google services
+        is transmitted using secure network connections provided by Google APIs
+        and the Android platform. No app can guarantee absolute security, but
+        DriveCam is designed to limit data access to the features selected by
+        the user.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Your Choices and Controls</h2>
+      <ul>
+        <li>You can deny or revoke camera, microphone, location, notification, or storage permissions in device settings.</li>
+        <li>You can choose whether recordings are saved to Google Drive or internal/local storage.</li>
+        <li>You can sign out of Google Drive from the app.</li>
+        <li>You can remove DriveCam's Google account access from your Google Account permissions page.</li>
+        <li>You can delete local recordings from the device or selected folder.</li>
+        <li>You can delete Drive recordings from Google Drive or use DriveCam deletion features where available.</li>
+        <li>You can clear visible upload history in the app where the feature is available.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>11. International Privacy Rights</h2>
+      <p>
+        Depending on your location, you may have rights to request access,
+        correction, deletion, restriction, portability, objection, withdrawal of
+        consent, or information about how your personal data is processed. These
+        rights may apply under laws such as the GDPR, UK GDPR, CCPA/CPRA, LGPD,
+        DPDP Act, or other privacy laws.
+      </p>
+      <p>
+        To make a privacy request, contact us at
+        <a href="mailto:honey3504581@gmail.com">honey3504581@gmail.com</a>.
+        We may need information to verify your identity and process your request.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Children</h2>
+      <p>
+        DriveCam is not directed to children. The app is intended for users who
+        are old enough to consent to camera, microphone, storage, and Google
+        account features under applicable law. If you believe a child has
+        provided personal information through DriveCam without appropriate
+        consent, contact us and we will take appropriate steps.
+      </p>
+    </section>
+
+    <section>
+      <h2>13. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When changes are
+        made, we will update the effective date above. If material changes are
+        made to how DriveCam handles personal information, we will provide
+        notice as required by applicable law or platform policy.
+      </p>
+    </section>
+
+    <section>
+      <h2>14. Contact Us</h2>
+      <p>
+        If you have questions, concerns, or requests about this Privacy Policy
+        or DriveCam's privacy practices, contact:
+      </p>
+      <p>
+        <strong>Sklabs, Naseer Technologies</strong><br>
+        Individual developer based in Asia, India<br>
+        Email: <a href="mailto:honey3504581@gmail.com">honey3504581@gmail.com</a>
+      </p>
+    </section>
+
+    <p class="footer">
+      Copyright 2026 Sklabs, Naseer Technologies. All rights reserved.
+    </p>
+  </main>
+</body>
+</html>
